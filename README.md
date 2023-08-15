@@ -1,49 +1,42 @@
-<h1>NewDBStructure - Python Script</h1>
+# New Database Structure - Vehicle Collection Initialization
 
-<h3>Description</h3>
-NewDBStructure is a Python script that manages different collections, including vehicles, dealers, users, and credentials. It processes data from two CSV files: electricVehicle.csv and dealer.csv. The information for the vehicles collection is sourced from electricVehicle.csv, which was obtained from https://www.kaggle.com. The data for dealers is extracted from dealer.csv, which contains random information about 11 dealers in a specific format.
+The "NewDBStructure.ipynb" IPython notebook outlines the process of initializing a new vehicle collection based on a real dataset sourced from [Kaggle](https://www.kaggle.com). This dataset provides essential fields such as VIN, make, model, and year, while additional fields are generated following standard conventions. Additionally, the notebook generates OBD-II parameter sets, associates vehicles with users and dealers, and establishes a comprehensive database structure.
 
-<h3>Data Sources</h3>
-electricVehicle.csv: This file provides information about electric vehicles and is sourced from https://www.kaggle.com.
-dealer.csv: This file contains random information about 11 dealers, including dealer name, location, contact details, brands, inventory, services, ratings, special offers, and hours of operation.
+## Initialization of Vehicle Collection
 
-<h3>Collections</h3>
+In this section, the notebook demonstrates the creation of a new vehicle collection using a real dataset from Kaggle. The dataset contains vital vehicle information, including VIN, make, model, and year. To complete the dataset, the notebook generates other fields using standardized conventions, ensuring consistency across entries.
 
-**Vehicles Collection:** This collection is created using data from electricVehicle.csv. It contains information about various electric vehicles, such as their make, model, year, price, and specifications.
+## OBD-II Parameter Set Generation
 
-**Dealers Collection:** The dealers collection is generated using the data from dealer.csv. It holds details of 11 dealers, including their names, locations, contact information, available brands, inventory status, offered services, ratings, special offers, and hours of operation.
+The notebook utilizes a predefined `logParamSet` list, derived from the OBD-II standard parameters. Each vehicle in the collection is assigned a set of 17 parameters, including 9 parameters related to EV batteries (common to all vehicles) and 8 randomly selected parameters. This ensures a comprehensive and diverse dataset representation.
 
-**Users Collection:** This collection is created based on the data derived from the Dealers Collection and additional user information. It contains details about users who interact with the system.
+## User and Dealer Association
 
-**Credentials Collection:** The credentials collection is generated using information from the Users Collection. It securely stores user credentials, such as usernames and encrypted passwords.
+For each vehicle entry, the notebook establishes associations with a user and a dealer. These associations are achieved by incorporating user and dealer information, including email addresses, into the dataset. This enables efficient tracking and management of vehicle ownership and dealership relationships.
 
+## Dealer Collection Initialization
 
-<h3>Script Execution</h3>
-To run the newDBStructure.py script, follow these steps:
+The notebook includes a dealer collection initialization process. This collection is populated using a CSV file containing randomly collected dealer information. Each dealer entry comprises relevant details that facilitate effective management of dealership-related data.
 
-Ensure you have Python installed on your system (Python 3.x is recommended).
-Download the newDBStructure.py file and the required CSV files (electricVehicle.csv and dealer.csv).
-Place all files in the same directory.
-Open a terminal or command prompt and navigate to the directory containing the script and data files.
-Execute the following command:
-python newDBStructure.py
+## User Collection Initialization
 
-The script will read the data from the CSV files, process it, and populate the collections accordingly.
-After execution, you can access the data in each collection programmatically or through appropriate database management tools.
+Similar to the dealer collection, the user collection is also initialized based on a CSV file. This file contains user-related information necessary for accurate user management within the database structure.
 
-<h3>Dependencies</h3>
-The newDBStructure.py script relies on the following Python libraries:
+## Credential Collection
 
-**csv:** For reading and parsing CSV files.
-**pandas:** For data manipulation and handling.
-**bcrypt:** For secure password hashing and verification.
-Ensure you have these libraries installed in your Python environment before running the script. You can install them using pip:
+The credential collection is established to manage user roles within the system. This collection contains records for 22 users, 11 dealers, and 2 administrators. Proper access controls and permissions can be applied based on these user roles.
 
-pip install pandas bcrypt
+## Usage
 
-<h3>Disclaimer</h3>
-Please note that the data from electricVehicle.csv is sourced from external sites and might be subject to copyright or usage restrictions. Ensure you have proper authorization to use this data for your project. Additionally, the script provided here is for demonstration purposes and may require further customization and error handling for production use.
+1. Open the "NewDBStructure.ipynb" notebook using Jupyter or a compatible environment.
+2. Execute the notebook cells sequentially to witness the creation of the new vehicle collection, generation of OBD-II parameter sets, user and dealer associations, dealer collection initialization, user collection initialization, and credential collection setup.
+3. Review the generated data, associations, and collections to ensure they align with the intended structure.
 
+Please note that this README serves as a concise overview. Refer to the actual notebook for in-depth code explanations, implementation details, and data manipulation procedures.
 
+Feel free to contribute, offer feedback, report issues, or suggest enhancements. Your contributions are valued and appreciated.
 
+---
 
+**Author:** Dana Aljamal
+**Contact:** danaaljamal94@gmail.com
