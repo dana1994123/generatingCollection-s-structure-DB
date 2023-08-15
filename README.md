@@ -13,8 +13,6 @@ dealer.csv: This file contains random information about 11 dealers, including de
 
 **Dealers Collection:** The dealers collection is generated using the data from dealer.csv. It holds details of 11 dealers, including their names, locations, contact information, available brands, inventory status, offered services, ratings, special offers, and hours of operation.
 
-**Notifications Collection:** The notifications collection is created using information generated from previous data and some additional functions. It stores notifications related to vehicles, dealers, users, and other relevant events.
-
 **Users Collection:** This collection is created based on the data derived from the Dealers Collection and additional user information. It contains details about users who interact with the system.
 
 **Credentials Collection:** The credentials collection is generated using information from the Users Collection. It securely stores user credentials, such as usernames and encrypted passwords.
