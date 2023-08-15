@@ -1,7 +1,7 @@
 <h1>NewDBStructure - Python Script</h1>
 
 <h3>Description</h3>
-NewDBStructure is a Python script that manages different collections, including vehicles, dealers, notifications, users, and credentials. It processes data from two CSV files: electricVehicle.csv and dealer.csv. The information for the vehicles collection is sourced from electricVehicle.csv, which was obtained from https://www.kaggle.com. The data for dealers is extracted from dealer.csv, which contains random information about 11 dealers in a specific format.
+NewDBStructure is a Python script that manages different collections, including vehicles, dealers, users, and credentials. It processes data from two CSV files: electricVehicle.csv and dealer.csv. The information for the vehicles collection is sourced from electricVehicle.csv, which was obtained from https://www.kaggle.com. The data for dealers is extracted from dealer.csv, which contains random information about 11 dealers in a specific format.
 
 <h3>Data Sources</h3>
 electricVehicle.csv: This file provides information about electric vehicles and is sourced from https://www.kaggle.com.
